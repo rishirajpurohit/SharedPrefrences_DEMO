@@ -4,15 +4,15 @@ Basic android application showing use of shared prefrences for login and registe
 
 
 # Initialize
-SharedPreferences sharedPreferences = getSharedPreferences("myAppPrefs",MODE_APPEND);
+  SharedPreferences sharedPreferences = getSharedPreferences("myAppPrefs",MODE_APPEND);
 
 # Save Data
-SharedPreferences.Editor editor = sharedPreferences.edit();
-editor.putString(key,value);
-editor.commit();
+  SharedPreferences.Editor editor = sharedPreferences.edit();
+  editor.putString(key,value);
+  editor.commit();
 
 # Retrieve Data
-String value = sharedPreferences.getString(key,"default_string");
+  String value = sharedPreferences.getString(key,"default_string");
 
 
 
